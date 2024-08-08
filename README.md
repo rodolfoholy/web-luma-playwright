@@ -32,22 +32,26 @@ Windows
 
 <h3>3. Installing the Robot Framework</h3>
 
-*	After installing Python, within terminal type: 
+*	After installing Python, within terminal type:
+  
 `bash
 sudo pip3 install robotframework==7.0.1 \
 && sudo pip3 install robotframework-browser==18.6.3 \
 && sudo pip3 install allure-robotframework==2.9.44 \
 `
+
 *	In the prompt Console, type the command `robot --version`; if the installation is correct, the installed version will appear.
 *   About the libs we installed, `robotframework-browser` is the Playwright library for Robot Framework, and the `allure-robotframework` is a improved report dashboard.
 If you had any problem during installation, follow this documentation: <https://robotframework.org/?tab=1#getting-started>
 
 <h3>3. Installing the Allure Report</h3>
 
-*	Open the Windows PowerShell and type: 
+*	Open the Windows PowerShell and type:
+
 `bash
 irm get.scoop.sh | iex
 `
+
 *	In the prompt Console, type the command `allure --version`; if the installation is correct, the installed version will appear.
 If you had any problem during installation, follow this documentation: <https://github.com/ScoopInstaller/Install#readme>
 
@@ -83,21 +87,25 @@ Executing Automated Tests
 To execute the automated tests, we will use some commands from the root folder of our project.
 
 *	To execute all implemented scenarios, we use the following code:
+  
 `bash
 robot ./tests/
 `
 
 *	To execute all scenarios and generate a report with screenshots, we use the following code:
+  
 `bash
 robot -d ./logs ./tests/
 `
 *   In the ./logs folder of the project, an HTML file with the test scenarios report is generated.
 
 *	To execute all scenarios and generate a report with Allure Report, we use the following code:
+  
 `bash
 robot --listener 'allure_robotframework;./allure-results/' ./tests
 `
 *   After the execution, with Windows PowerShell, you can go to the project folder and execute:
+  
 `bash
 allure serve
 `
