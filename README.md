@@ -36,7 +36,7 @@ Windows
 
 *	After installing Python, within terminal type:
   
-`bash
+`
 sudo pip3 install robotframework==7.0.1 \
 && sudo pip3 install robotframework-browser==18.6.3 \
 && sudo pip3 install allure-robotframework==2.9.44 \
@@ -52,7 +52,7 @@ sudo pip3 install robotframework==7.0.1 \
 
 *	Open the Windows PowerShell and type:
 
-`bash
+`
 irm get.scoop.sh | iex
 `
 
@@ -80,7 +80,7 @@ For test automation, we will use the Robot Framework.
 We use tags to differentiate scenarios by groups, functionalities, or testing phases. Tags are inserted on the line below the keyword name.
 In the terminal, when we want to run scenarios that are named with tags, we simply use the following command:
 
-`bash
+`
 robot -d -i tag
 `
 
@@ -93,25 +93,25 @@ To execute the automated tests, we will use some commands from the root folder o
 
 *	To execute all implemented scenarios, we use the following code:
   
-`bash
+`
 robot ./tests/
 `
 
 *	To execute all scenarios and generate a report with screenshots, we use the following code:
   
-`bash
+`
 robot -d ./logs ./tests/
 `
 *   In the ./logs folder of the project, an HTML file with the test scenarios report is generated.
 
 *	To execute all scenarios and generate a report with Allure Report, we use the following code:
   
-`bash
+`
 robot --listener 'allure_robotframework;./allure-results/' ./tests
 `
 *   After the execution, with Windows PowerShell, you can go to the project folder and execute:
   
-`bash
+`
 allure serve
 `
 
