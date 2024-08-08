@@ -6,8 +6,10 @@ Required installations:
 -----------------------
 
 *	Robot Framework: Robot Framework is an open-source generic automation framework. It can be used for test automation (Web, Mobile, and API) and robotic process automation (RPA).
+*	Playwright: Playwright is an open-source automation library developed by Microsoft for testing web applications. It enables reliable end-to-end testing and supports multiple browsers, including Chrome, Firefox, and Safari, through a single API.
+*	Allure Report: Allure Report is an open-source framework designed for test reporting, providing clear and concise visualization of test execution results. It supports various testing frameworks and languages, enhancing reports with logs, screenshots, and timelines to aid in debugging and test analysis.
 *	Python 3: The programming language used in the tests.
-*   Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to execute JavaScript code server-side. It is built on Chrome's V8 JavaScript engine and is designed to build scalable network applications efficiently.
+* Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to execute JavaScript code server-side. It is built on Chrome's V8 JavaScript engine and is designed to build scalable network applications efficiently.
 
 Setting Up the Test Automation Environment
 ------------------------------------------------------------
