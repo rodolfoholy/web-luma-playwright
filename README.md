@@ -22,13 +22,13 @@ Windows
 *	Download from: <https://www.python.org/downloads/>.
 *	Run the downloaded file and follow the instructions by clicking ‘next’.
 * 	Select the 3 displayed checkboxes and continue clicking ‘next’ until ‘finish’.
-*	In the prompt Console, type the command `python --version`; if the installation is correct, the installed version will appear.
+*	In the prompt Console, type the command `python --version`. If the installation is correct, the installed version will appear.
 
 <h3>2. Installing the NodeJS</h3>
 
 *	Download from: <https://nodejs.org/en>.
 *	Run the downloaded file and follow the instructions by clicking ‘next’.
-*	In the prompt Console, type the command `node --version`; if the installation is correct, the installed version will appear.
+*	In the prompt Console, type the command `node --version`. If the installation is correct, the installed version will appear.
 
 <h3>3. Installing the Robot Framework</h3>
 
@@ -41,8 +41,10 @@ sudo pip3 install robotframework==7.0.1 \
 `
 
 *	In the prompt Console, type the command `robot --version`; if the installation is correct, the installed version will appear.
-*   About the libs we installed, `robotframework-browser` is the Playwright library for Robot Framework, and the `allure-robotframework` is a improved report dashboard.
-If you had any problem during installation, follow this documentation: <https://robotframework.org/?tab=1#getting-started>
+
+* About the libs we installed, `robotframework-browser` is the Playwright library for Robot Framework, and the `allure-robotframework` is a improved report dashboard.
+
+* If you had any problem during installation, follow this documentation: <https://robotframework.org/?tab=1#getting-started>
 
 <h3>3. Installing the Allure Report</h3>
 
@@ -53,7 +55,8 @@ irm get.scoop.sh | iex
 `
 
 *	In the prompt Console, type the command `allure --version`; if the installation is correct, the installed version will appear.
-If you had any problem during installation, follow this documentation: <https://github.com/ScoopInstaller/Install#readme>
+
+*	If you had any problem during installation, follow this documentation: <https://github.com/ScoopInstaller/Install#readme>
 
 And that's it, your environment is set up.
 
