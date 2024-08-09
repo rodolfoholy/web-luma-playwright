@@ -10,6 +10,7 @@ Required installations:
 *	Allure Report: Allure Report is an open-source framework designed for test reporting, providing clear and concise visualization of test execution results. It supports various testing frameworks and languages, enhancing reports with logs, screenshots, and timelines to aid in debugging and test analysis.
 *	Python 3: The programming language used in the tests.
 * Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to execute JavaScript code server-side. It is built on Chrome's V8 JavaScript engine and is designed to build scalable network applications efficiently.
+* Chrome, Edge or Safari: You can use everyone of these browsers for the test.
 
 Setting Up the Test Automation Environment
 ------------------------------------------------------------
@@ -96,6 +97,11 @@ To execute the automated tests, we will use some commands from the root folder o
 `
 robot ./tests/
 `
+
+* To execute the automation, by default, the code is configured to run the automation on Google Chrome. If you need to change the browser being used, use the following commands:
+
+For Firefox: `robot -v browser:firefox ./tests/`
+For Safari: `robot -v browser:webkit ./tests/`
 
 *	To execute all scenarios and generate a report with screenshots, we use the following code:
   
