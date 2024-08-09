@@ -22,7 +22,9 @@ ${EMAIL_ERROR_MESSAGE}             Please enter a valid email address (Ex: johnd
 *** Keywords ***
 
 Open The Test Browser
-    New Browser                    browser=chromium    headless=False
+    ${isEmpty}                     Run Keyword And Return Status          Variable Should Not Exist       ${browser}
+    Run Keyword If                 '${isEmpty}'=='True'                   Set Suite Variable              ${browser}           chromium
+    New Browser                    browser=${browser}    headless=False
     New Page                       ${HOME_URL}
     Set Viewport Size              width=2400          height=1600
 
